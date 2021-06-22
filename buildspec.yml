@@ -40,7 +40,7 @@ phases:
       - docker build -t shan0077/dkr-multicontainer-app-backend ./backend
       - docker build -t shan0077/dkr-multicontainer-app-nginx ./nginx
       # Log in to the Docker CLI
-      - echo "$DOCKER_PW" | docker login -u "$DOCKER_ID" --password-stdin
+      - echo "$dockerhub_password" | docker login -u "$dockerhub_username" --password-stdin
   post_build:
     commands:
       # Take these images and push them to Docker hub
