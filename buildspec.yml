@@ -48,3 +48,7 @@ phases:
       - docker push sohan0077/dkr-multicontainer-app-client
       - docker push sohan0077/dkr-multicontainer-app-backend
       - docker push sohan0077/dkr-multicontainer-app-nginx
+
+artifacts:
+  files:
+    - "Dockerrun.aws.json"
